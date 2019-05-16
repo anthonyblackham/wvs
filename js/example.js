@@ -58,6 +58,11 @@ var gpxLayer = omnivore.gpx('data/wvstrain1.gpx', null, customLayer).on('ready',
     });
 });
 
+$.getJSON("data/trainstops.geojson",function(Data){
+    var trainstops = L.geoJson(Data);
+     trainstops.addTo(map);
+});
+
 var gpxTimeLayer = L.timeDimension.layer.geoJson(gpxLayer, {
     updateTimeDimension: true,
     addlastPoint: true,
