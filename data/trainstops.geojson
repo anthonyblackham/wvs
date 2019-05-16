@@ -1,0 +1,447 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Oregon City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5995225,
+          45.36231666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Buena Vista"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5869913,
+          45.36107338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Collis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5781804,
+          45.35707859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Campine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5734283,
+          45.3529274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "McBain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5760854,
+          45.34883929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Maple Lane"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5720936,
+          45.3339072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Robbins"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.569248,
+          45.32940115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Glen Oak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5639848,
+          45.31693265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Eby"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5496073,
+          45.30033112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Swift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.559226,
+          45.30918098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Beaver Creek"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.542538,
+          45.28900264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Ingram"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5517343,
+          45.26921589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Spangler"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5605544,
+          45.25905615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Lewis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5650479,
+          45.2539426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Buckner Creek"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5562005,
+          45.23372621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Howard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5818268,
+          45.22791969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Mulino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5865404,
+          45.22165341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "North Liberal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5875637,
+          45.19544197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Liberal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5918042,
+          45.1870691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Huntley"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5925483,
+          45.17749823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Richard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5871534,
+          45.1632056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Molalla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5833882,
+          45.14869726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Kaylor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.5994456,
+          45.14639916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Ogle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6301264,
+          45.14370219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Hitchman"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6504389,
+          45.14160666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Yoder"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6816029,
+          45.13809445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Busch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.701707,
+          45.12822039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Wilda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7199589,
+          45.11896305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Harding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7281814,
+          45.11484119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Monitor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7508001,
+          45.1006353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Dominic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7671747,
+          45.08552342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Berning"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7820032,
+          45.0714519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7868425,
+          45.06688804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "Mt. Angel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7985129,
+          45.06593055
+        ]
+      }
+    }
+  ]
+}
