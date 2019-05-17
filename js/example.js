@@ -84,33 +84,35 @@ var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 });
 
+var googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+});
+
 var baseMaps = {
-    "Pioneer layer": pioneerLayer,
-    "OSM Layer": osmLayer,
+    "Pioneer Basemap": pioneerLayer,
+    "Google Basemap": googleHybrid,
+    "OSM Basemap": osmLayer,
 };
 
 var overlayMaps = {
-    "Train 1": gpxTimeLayer,
-//    "Train 2": trainstops,
+    "Trains": gpxTimeLayer,
 };
 
-//var controlLayers = L.control.layers().addTo(map);
-
-
-
-//var baseLayers = getCommonBaseLayers(map); // see baselayers.js
-//osmLayer.addTo(map);
 var controlLayers = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
+// added to bottom because of asynchronous issues
 $.getJSON("data/trainstops.geojson",function(Data){
     var trainstops = L.geoJson(Data, {
         pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
-	    },
+        },
         onEachFeature: function (feature, layer) {
-			layer.bindPopup(feature.properties.Station);
+            layer.bindPopup(feature.properties.Station);
+                layer.on('mouseover', function() { layer.openPopup(); });
+                layer.on('mouseout', function() { layer.closePopup(); });
         }
-	});
+    });
     trainstops.addTo(map);
   controlLayers.addOverlay(trainstops, 'Train Stops');
 });
