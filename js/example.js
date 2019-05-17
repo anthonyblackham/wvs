@@ -41,6 +41,15 @@ var icon = L.icon({
     iconAnchor: [10, 25]
 });
 
+var geojsonMarkerOptions = {
+    radius: 4,
+    fillColor: "#000",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
 var customLayer = L.geoJson(null, {
     pointToLayer: function (feature, latLng) {
         if (feature.properties.hasOwnProperty('last')) {
@@ -59,8 +68,15 @@ var gpxLayer = omnivore.gpx('data/wvstrain1.gpx', null, customLayer).on('ready',
 });
 
 $.getJSON("data/trainstops.geojson",function(Data){
-    var trainstops = L.geoJson(Data);
-     trainstops.addTo(map);
+    var trainstops = L.geoJson(Data, {
+        pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+	    },
+        onEachFeature: function (feature, layer) {
+			layer.bindPopup(feature.properties.Station);
+        }
+	});
+	trainstops.addTo(map);
 });
 
 var gpxTimeLayer = L.timeDimension.layer.geoJson(gpxLayer, {
