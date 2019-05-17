@@ -42,13 +42,15 @@ var icon = L.icon({
 });
 
 var geojsonMarkerOptions = {
-    radius: 6,
+    radius: 4,
     fillColor: "#000",
     color: "#000",
     weight: 1,
     opacity: 1,
     fillOpacity: 0.8
 };
+
+
 
 var customLayer = L.geoJson(null, {
     pointToLayer: function (feature, latLng) {
@@ -67,17 +69,6 @@ var gpxLayer = omnivore.gpx('data/wvstrain1.gpx', null, customLayer).on('ready',
     });
 });
 
-$.getJSON("data/trainstops.geojson",function(Data){
-    var trainstops = L.geoJson(Data, {
-        pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions);
-	    },
-        onEachFeature: function (feature, layer) {
-			layer.bindPopup(feature.properties.Station);
-        }
-	});
-	trainstops.addTo(map);
-});
 
 var gpxTimeLayer = L.timeDimension.layer.geoJson(gpxLayer, {
     updateTimeDimension: true,
@@ -100,8 +91,27 @@ var baseMaps = {
 
 var overlayMaps = {
     "Train 1": gpxTimeLayer,
+//    "Train 2": trainstops,
 };
+
+//var controlLayers = L.control.layers().addTo(map);
+
+
+
 //var baseLayers = getCommonBaseLayers(map); // see baselayers.js
 //osmLayer.addTo(map);
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+var controlLayers = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+$.getJSON("data/trainstops.geojson",function(Data){
+    var trainstops = L.geoJson(Data, {
+        pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+	    },
+        onEachFeature: function (feature, layer) {
+			layer.bindPopup(feature.properties.Station);
+        }
+	});
+    trainstops.addTo(map);
+  controlLayers.addOverlay(trainstops, 'Train Stops');
+});
 gpxTimeLayer.addTo(map);
