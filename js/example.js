@@ -42,7 +42,7 @@ var icon = L.icon({
 });
 
 var geojsonMarkerOptions = {
-    radius: 4,
+    radius: 6,
     fillColor: "#000",
     color: "#000",
     weight: 1,
